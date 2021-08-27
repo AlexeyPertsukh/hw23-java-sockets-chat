@@ -31,8 +31,8 @@ public class Const {
                                              "******************************";
 
     public static final String FORMAT_MSG =    "%s %s: %s";
-    public static final String MSG_ADD_NAME =      "вошел в чатик";
-    public static final String MSG_DISCONNECT =    "покинул чатик";
+    public static final String MSG_ADD_NAME =      "вошел в чат";
+    public static final String MSG_DISCONNECT =    "покинул чат";
     public static final String TIME_FORMAT =        "HH:mm";
 
     private Const() {}
