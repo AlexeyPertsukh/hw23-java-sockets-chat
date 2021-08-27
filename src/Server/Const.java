@@ -17,10 +17,10 @@ public class Const {
                                                 "* разрешены цифры, но первый символ должен быть буквой \n" +
                                                 "* без пробелов\n" +
                                                 MSG_NAME_LENGTH + "\n" +
-                                                "Введите свое имя: ";
+                                                "-------------\nВведите свое имя: ";
 
-    public final static String MSG_NAME_DUPLICATED = "Это имя уже используется";
-    public final static String MSG_NAME_INCORRECT = "Недопустимое имя";
+    public final static String MSG_NAME_DUPLICATED = "<Это имя уже используется>";
+    public final static String MSG_NAME_INCORRECT = "<Недопустимое имя>";
     public final static String FIRST_MSG_TO_CLIENT = "***********************************\n"
                                          + String.format("Welcome to %s %s \n", PROG_NAME, VERSION)
                                                      +   "***********************************";

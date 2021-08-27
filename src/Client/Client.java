@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class Client implements Runnable{
 
-
     private final Scanner scanner;
     private final boolean isPrintInputMessages;
     private final String host;

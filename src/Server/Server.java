@@ -36,7 +36,7 @@ public class Server {
 //            sleep(100);
             sendFirstMessage(); //отправка первого сообщения подключившемся клиентам
             clientsRegistration();
-            deleteDisconnClients();
+            deleteDisconnectedClients();
 
             //в буфере есть сообщения от клиентов- распечатываем и пересылаем всем
             if(!messagesBuffer.isEmpty()) {
@@ -140,7 +140,7 @@ public class Server {
 
 
     //как упростить удаление через стрим?
-    private void deleteDisconnClients() {
+    private void deleteDisconnectedClients() {
         ClientListener c;
         //не менять на foreach или stream, пока полностью не разобрался с синхронизацие arraylist
         for (int i = clientListeners.size() - 1; i >= 0 ; i--) {

@@ -20,7 +20,8 @@ public class Connect implements Runnable{
     public void run() {
         try {
             ServerSocket serverSocket = new ServerSocket(port);
-            System.out.println("server started");
+            String messageStart = String.format("server started: port %d", port);
+            System.out.println(messageStart);
             while (true) {
                 Socket socket = serverSocket.accept();      //ждать, пока не появится новое подключение
                 System.out.println("new client connected");
